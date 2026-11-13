@@ -1,0 +1,35 @@
+Return-Path: <billing@harborline-supplies.example>
+Authentication-Results: mx.example.net; spf=pass
+ smtp.mailfrom=harborline-supplies.example; dkim=none; dmarc=none
+From: Harborline Supplies Accounts <billing@harborline-supplies.example>
+To: Dren Example <dren@example.net>
+Subject: Overdue invoice 4471 - final reminder
+Date: Tue, 10 Nov 2026 10:05:00 +0100
+Message-ID: <synthetic-sample-3@harborline-supplies.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============8032044933384296133=="
+
+--===============8032044933384296133==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+Invoice 4471 is now overdue. This is our final reminder.
+Please open the attached invoice and arrange payment as soon as possible to a=
+void late fees.
+
+Regards,
+Accounts team
+Harborline Supplies
+
+--===============8032044933384296133==
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Invoice_4471.pdf.exe"
+MIME-Version: 1.0
+
+VGhpcyBpcyBhIGhhcm1sZXNzIHBsYWNlaG9sZGVyIGZpbGUgZm9yIHRlc3RpbmcgcGhpc2gtdHJp
+YWdlLiBJdCBpcyBwbGFpbiB0ZXh0LCBub3QgYSBwcm9ncmFtLgo=
+
+--===============8032044933384296133==--
