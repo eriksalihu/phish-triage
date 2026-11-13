@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.12"]
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install pytest (test-only dependency)
+        run: python -m pip install pytest
+      - name: Run tests
+        run: python -m pytest -v
+      - name: Demo on the sample emails
+        # The tool exits 0 even for a high-risk email, so findings never fail the build.
+        run: |
+          {
+            echo "### phish-triage on samples/ (Python ${{ matrix.python-version }})"
+            echo '```text'
+            python -m phish_triage samples/newsletter.eml samples/credential_phish.eml samples/invoice_attachment.eml
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
