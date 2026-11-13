@@ -1,0 +1,42 @@
+Return-Path: <bounce@mail.example.org>
+Authentication-Results: mx.example.net; spf=pass
+ smtp.mailfrom=mail.example.org; dkim=pass header.d=example.org; dmarc=pass
+ header.from=example.org
+From: Example Garden Club <news@example.org>
+To: Arta Example <arta@example.net>
+Subject: November newsletter: preparing your garden for winter
+Date: Tue, 10 Nov 2026 08:30:00 +0100
+Message-ID: <newsletter-2026-11@example.org>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="===============4624726072623204020=="
+
+--===============4624726072623204020==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello Arta,
+
+This month we cover mulching, pruning roses and storing tools over winter.
+
+Read the full newsletter: https://www.example.org/newsletter/2026-11
+
+You are receiving this email because you joined the Example Garden Club.
+Unsubscribe: https://www.example.org/unsubscribe
+
+--===============4624726072623204020==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body>
+<p>Hello Arta,</p>
+<p>This month we cover mulching, pruning roses and storing tools over winter.=
+</p>
+<p><a href=3D"https://www.example.org/newsletter/2026-11">Read the full newsl=
+etter</a></p>
+<p>You are receiving this email because you joined the Example Garden Club.
+<a href=3D"https://www.example.org/unsubscribe">Unsubscribe</a></p>
+</body></html>
+
+--===============4624726072623204020==--
