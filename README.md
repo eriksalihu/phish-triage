@@ -137,6 +137,12 @@ The report lists a technique only when the matching checks added points.
 - Flag look-alike domains that are a few characters away from the claimed sender
 - Add phrase lists for other languages
 
+## Related projects
+
+- [log-sentinel](https://github.com/eriksalihu/log-sentinel): finds SSH brute force, password spraying and web attack patterns in Linux auth logs and web access logs
+- [soc-playbooks](https://github.com/eriksalihu/soc-playbooks): six tier-1 SOC alert scenarios, each with a Sigma detection rule and a response playbook
+- [linux-audit](https://github.com/eriksalihu/linux-audit): read-only Bash script that checks basic Linux hardening and prints PASS, WARN or FAIL
+
 ## License
 
 [MIT](LICENSE)
